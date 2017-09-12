@@ -1,0 +1,304 @@
+nBitsInALong: 32
+
+
+                               MrBayes v3.1.2
+
+                      (Bayesian Analysis of Phylogeny)
+
+                                     by
+
+                  John P. Huelsenbeck and Fredrik Ronquist
+
+                 Section of Ecology, Behavior and Evolution
+                       Division of Biological Sciences
+                     University of California, San Diego
+                           johnh@biomail.ucsd.edu
+
+                       School of Computational Science
+                           Florida State University
+                            ronquist@csit.fsu.edu 
+
+              Distributed under the GNU General Public License
+
+               Type "help" or "help <command>" for information
+                     on the commands that are available.
+
+
+
+   Executing file "pro_seq.nex"
+   UNIX line termination
+   Longest line length = 1003
+   Parsing file
+   Expecting NEXUS formatted file
+   Reading data block
+      Allocated matrix
+      Matrix has 50 taxa and 1000 characters
+      Missing data coded as ?
+      Gaps coded as -
+      Data is Protein
+      Setting default partition (does not divide up characters).
+      Taxon  1 -> 19
+      Taxon  2 -> 35
+      Taxon  3 -> 41
+      Taxon  4 -> 1
+      Taxon  5 -> 45
+      Taxon  6 -> 22
+      Taxon  7 -> 43
+      Taxon  8 -> 27
+      Taxon  9 -> 46
+      Taxon 10 -> 15
+      Taxon 11 -> 20
+      Taxon 12 -> 18
+      Taxon 13 -> 33
+      Taxon 14 -> 17
+      Taxon 15 -> 16
+      Taxon 16 -> 5
+      Taxon 17 -> 28
+      Taxon 18 -> 30
+      Taxon 19 -> 48
+      Taxon 20 -> 36
+      Taxon 21 -> 6
+      Taxon 22 -> 11
+      Taxon 23 -> 21
+      Taxon 24 -> 14
+      Taxon 25 -> 31
+      Taxon 26 -> 49
+      Taxon 27 -> 37
+      Taxon 28 -> 7
+      Taxon 29 -> 26
+      Taxon 30 -> 34
+      Taxon 31 -> 23
+      Taxon 32 -> 32
+      Taxon 33 -> 9
+      Taxon 34 -> 13
+      Taxon 35 -> 10
+      Taxon 36 -> 38
+      Taxon 37 -> 39
+      Taxon 38 -> 29
+      Taxon 39 -> 44
+      Taxon 40 -> 2
+      Taxon 41 -> 4
+      Taxon 42 -> 47
+      Taxon 43 -> 24
+      Taxon 44 -> 3
+      Taxon 45 -> 8
+      Taxon 46 -> 40
+      Taxon 47 -> 42
+      Taxon 48 -> 50
+      Taxon 49 -> 12
+      Taxon 50 -> 25
+      Setting output file names to "pro_seq.nex.run<i>.<p/t>"
+      Successfully read matrix
+   Exiting data block
+   Reading MrBayes block
+      Setting autoclose to yes
+      Setting nowarnings to yes
+      Setting number of generations to 1
+      Setting print frequency to 1000
+      Setting sample frequency to 1000
+      Setting diagnosing frequency to 1000
+      Setting number of chains to 1
+      Setting number of runs to 1
+      Setting program to save branch length information
+      Setting chain output file names to "pro_seq.nex.<p/t>"
+      Successfully set chain parameters
+      Setting Rates to Invgamma
+      Successfully set likelihood model parameters
+      Running Markov chain
+      MCMC stamp = 0355314773
+      Seed = 1000
+      Swapseed = 100
+      Model settings:
+
+            Datatype  = Protein
+            Aamodel   = Poisson
+            Covarion  = No
+            # States  = 20
+                        State frequencies are fixed to be equal
+            Rates     = Invgamma
+                        Gamma shape parameter is uniformly dist-
+                        ributed on the interval (0.00,200.00).
+                        Proportion of invariable sites is uniformly dist-
+                        ributed on the interval (0.00,1.00).
+                        Gamma distribution is approximated using 4 categories.
+
+      Active parameters: 
+
+         Parameters
+         ------------------
+         Statefreq        1
+         Shape            2
+         Pinvar           3
+         Topology         4
+         Brlens           5
+         ------------------
+
+         1 --  Parameter  = Statefreq
+               Prior      = Fixed (equal frequencies)
+         2 --  Parameter  = Shape
+               Prior      = Uniform(0.00,200.00)
+         3 --  Parameter  = Pinvar
+               Prior      = Uniform(0.00,1.00)
+         4 --  Parameter  = Topology
+               Prior      = All topologies equally probable a priori
+         5 --  Parameter  = Brlens
+               Prior      = Branch lengths are Unconstrained:Exponential(10.0)
+
+      Number of taxa = 50
+      Number of characters = 1000
+      Compressing data matrix for division 1
+      Division 1 has 993 unique site patterns
+      The MCMC sampler will use the following moves:
+         With prob.  Chain will change
+            4.55 %   param. 2 (gamma shape) with multiplier
+            4.55 %   param. 3 (prop. invar. sites) with sliding window
+           68.18 %   param. 4 (topology and branch lengths) with extending TBR
+           22.73 %   param. 4 (topology and branch lengths) with LOCAL
+      Creating parsimony (bitset) matrix for division 1
+      Initializing conditional likelihoods for terminals
+      Initializing conditional likelihoods for internal nodes
+      Initializing invariable-site conditional likelihoods
+      Initial log likelihoods:
+3
+150.290106 145.764961 134.925893 104.754245
+1
+72.125083 66.668307 54.447183 26.837232
+2
+40.133822 68.073766 122.913149 197.501488
+3
+260.512621 251.031468 228.321295 165.105216
+0
+32.362752 47.364009 61.559624 31.281873
+3
+251.575660 242.496346 220.748695 160.211894
+2
+231.019969 212.459749 171.074731 78.939105
+2
+220.451545 286.018847 386.211284 360.348705
+2
+206.144650 255.571024 307.409860 188.763004
+2
+170.094189 161.453520 142.039767 81.268587
+2
+29.466555 27.355732 22.000222 8.719535
+3
+253.561651 244.393040 222.431495 161.299299
+2
+238.911591 219.677668 176.799591 81.407783
+2
+232.349255 302.089274 408.419514 379.447975
+2
+138.389269 134.358884 118.379277 56.517990
+3
+929.791674 890.217286 795.424907 531.560660
+1
+360.362294 331.486173 267.151255 124.120237
+2
+350.348029 404.473781 479.824619 403.661256
+2
+326.467952 356.222815 370.392452 199.402698
+0
+101.087256 128.506504 278.808921 289.322440
+2
+93.464972 87.423905 82.854164 38.013074
+3
+265.477599 255.773202 232.528295 167.823728
+0
+95.329281 110.499425 119.948064 37.900002
+2
+96.511278 118.371093 231.636519 181.592379
+3
+260.512621 251.031468 228.321295 165.105216
+0
+75.640409 74.276360 56.826861 14.640286
+3
+736.157526 705.289638 631.351904 425.538684
+1
+635.527654 582.821097 465.721947 208.057250
+1
+615.585467 590.818076 521.807079 295.130155
+0
+75.235999 79.398152 149.021850 104.403797
+3
+735.164531 704.341291 630.510504 424.994982
+1
+706.553280 647.788999 517.259359 230.271307
+0
+75.974584 91.440465 243.922971 200.799840
+3
+716.297614 686.322700 614.523903 414.664636
+3
+391.588043 376.213260 339.386097 236.873938
+3
+137.381163 133.436451 123.987692 97.686113
+0
+59.851075 52.858516 38.332624 12.190938
+0
+50.442426 58.874803 73.817276 83.968617
+3
+938.728634 898.752408 802.997507 536.453982
+0
+51.644108 71.993535 117.319823 126.884232
+2
+53.823353 77.755599 112.242275 130.059857
+3
+249.589669 240.599652 219.065895 159.124489
+0
+21.945443 25.650363 23.130643 4.195461
+2
+28.012613 66.539443 183.477016 377.294491
+2
+22.734180 36.418897 85.035505 69.137934
+0
+12.667773 15.815336 60.540394 51.084017
+0
+10.105694 38.995894 173.267241 189.714075
+         Chain 1 -- -98136.172797
+      Overwriting file "pro_seq.nex.p"
+      Overwriting file "pro_seq.nex.t"
+      Overwriting file "pro_seq.nex.mcmc"
+1
+70.194115 65.162654 53.854592 27.944139
+2
+59.762157 52.271093 36.977443 10.813166
+1
+80.526065 186.485189 371.171079 452.942623
+2
+83.565917 211.243070 432.925144 516.445273
+0
+49.557485 54.197602 49.758030 15.250797
+2
+54.467194 111.797455 315.240967 429.012385
+0
+21.904988 25.412925 22.995550 5.755144
+2
+27.878110 65.122298 167.146426 321.295233
+2
+22.664560 35.644642 80.549039 66.254935
+0
+12.665164 15.796423 58.412255 44.014062
+0
+10.097671 38.932922 173.730036 195.974325
+lnLike: -97865.849666
+
+      Chain results:
+
+          1 -- -97865.850 
+
+      Analysis completed in less than 1 second
+      Analysis used 0.04 seconds of CPU time
+      Likelihood of best state was -97865.85
+      Acceptance rates for the moves:
+         With prob.  Chain accepted changes to
+         not tried   param. 2 (gamma shape) with multiplier
+         not tried   param. 3 (prop. invar. sites) with sliding window
+          100.00 %   param. 4 (topology and branch lengths) with extending TBR
+         not tried   param. 4 (topology and branch lengths) with LOCAL
+   Exiting MrBayes block
+   Reached end of file
+
+   Tasks completed, exiting program because mode is noninteractive
+   To return control to the command line after completion of file processing, 
+   set mode to interactive with 'mb -i <filename>' (i is for interactive)
+   or use 'set mode=interactive'
+

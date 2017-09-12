@@ -1,0 +1,13 @@
+int      DoCompareTree (void);
+int      DoCompareTreeParm (char *parmName, char *tkn);
+int      DoSumt (void);
+int      DoSumtParm (char *parmName, char *tkn);
+int      DoTranslate (void);
+int      DoTranslateParm (char *parmName, char *tkn);
+int      DoTree (void);
+int      DoTreeParm (char *parmName, char *tkn);
+void     FlipBits (int *partition, int length, int *mask);
+int      IsPartCompatible (int *smaller, int *larger, int length);
+int      IsPartNested (int *smaller, int *larger, int length);
+void     SortInts (int *item, int *assoc, int count, int descendingOrder);
+void     SortInts2 (int *item, int *assoc, int left, int right, int descendingOrder);
